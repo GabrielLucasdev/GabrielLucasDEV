@@ -1,0 +1,64 @@
+/* Estilo geral para telas grandes */
+body {
+    font-size: 1.6rem;
+}
+
+/* Estilo para telas menores (ex: tablets, smartphones) */
+@media (max-width: 768px) {
+    .navbar a {
+        display: none;
+    }
+
+    .Home-container {
+        width: 100%;
+        height: auto;
+        padding: 2rem;
+        text-align: center;
+    }
+
+    .About .row {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .About .row .img-about img {
+        width: 80%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .About .row .content h1 {
+        font-size: 3rem;
+        padding: 1rem;
+    }
+
+    .About .row .content p {
+        font-size: 1.6rem;
+        max-width: 90%;
+    }
+    #particles-js {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; /* Certifique-se de que ele esteja atrás de outros conteúdos */
+        background-color: var(--background); /* Cor de fundo, se necessário */
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar a {
+        margin: 0 1rem;
+        font-size: 1.2rem;
+    }
+
+    .About .row .content h1 {
+        font-size: 2.5rem;
+    }
+
+    .About .row .content p {
+        font-size: 1.4rem;
+    }
+    
+}
